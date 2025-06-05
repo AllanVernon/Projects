@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Tumor Detection</title>
+    <link rel="stylesheet" href="{% static 'homepage/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#about-section">About</a></li> 
+                <li><a href="{% url 'detection' %}">Detection</a></li>
+                {% comment %} <li><a href="#">Contact</a></li>   {% endcomment %}
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>Liver Tumor Detection</h1>
+            <p>Utilizing advanced techniques for accurate and early detection of liver tumors.</p>
+            <a href="#about-section" class="cta-button">Learn More</a> <!-- Scroll to About Section -->
+        </div>
+    </header>
+
+    <main>
+        <section id="about-section" class="about">
+            <h2>About Our System</h2>
+            <p>This System presents a cutting-edge approach to liver tumor detection and analysis using Convolutional Neural Networks (CNN). By employing deep learning techniques on CT scan images, the system is designed to streamline the tumor detection process, reducing the risk of human error and improving the speed and accuracy of diagnosis.</p>
+        <p>The system goes beyond just detecting the presence of tumors; it also classifies tumors into different stages, providing crucial information to healthcare professionals for diagnosis and treatment planning. The model's architecture is carefully crafted, incorporating image processing methods, data augmentation, and CNN model training to achieve precise predictions and results.</p>
+        <p>System aims to make a significant impact on liver tumors diagnosis, providing medical professionals with advanced tools to enhance their diagnostic capabilities.</p>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Our Detection System?</h2>
+            <div class="feature-box">
+                <h3>High Accuracy</h3>
+                <p>Our model provide precise detection of liver tumors, ensuring high accuracy in diagnosis.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Early Detection</h3>
+                <p>Detect tumors at an early stage for more effective treatment and improved patient outcomes.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Fast Results</h3>
+                <p>Our system delivers results within minutes, allowing for quick decisions in urgent cases.</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Liver Tumor Detection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
